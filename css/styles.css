@@ -1,0 +1,27 @@
+.credit {
+    background-color: aqua;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.text-red {
+    color: red;
+
+}
+
+.blink-soft {
+    animation: blinker 1s step-end infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+.container{
+    background-color: beige;
+    padding-left: 8%;
+}
+.row{
+    padding: 1%;
+}

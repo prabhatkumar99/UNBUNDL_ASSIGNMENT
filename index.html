@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h5 class="text-red blink-soft">CHOCOLATE SHOP</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span
+                        class="total-count"></span>)</button>&nbsp;&nbsp;<button class="clear-cart btn btn-danger">Clear
+                    Cart</button>
+            </div>
+    </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 13rem;">
+                    <img class="card-img-top" src="./img/5Star.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5Star</h4>
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: ₹20</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" data-name="5Star" data-price="20" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card" style="width: 13rem;">
+                    <img class="card-img-top" src="./img/Kitkat.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kitkat</h4>
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: ₹10</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" data-name="Kitkat" data-price="10" class="add-to-cart btn btn-primary">Add to
+                            cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 13rem;">
+                    <img class="card-img-top" src="./img/Munch.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Munch</h4>
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: ₹5</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" data-name="Munch" data-price="5" class="add-to-cart btn btn-primary text-white">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 13rem;">
+                    <img class="card-img-top" src="./img/Snickers.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Snickers</h4>
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: ₹5</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" data-name="Snickers" data-price="5"
+                            class="add-to-cart btn btn-primary text-white">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col">
+                <div class="card" style="width: 13rem;">
+                    <img class="card-img-top" src="./img/Dairy Milk.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dairy Milk</h4>
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: ₹10</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" data-name="Dairy Milk" data-price="10"
+                            class="add-to-cart btn btn-primary text-white">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 13rem;">
+                    <img class="card-img-top" src="./img/Perk.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perk</h4>
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: ₹5</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" data-name="Perk" data-price="5" class="add-to-cart btn btn-primary text-white">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 13rem;">
+                    <img class="card-img-top" src="./img/Milka.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Milka</h4>
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: ₹5</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" data-name="Milka" data-price="5" class="add-to-cart btn btn-primary text-white">Add
+                            to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 13rem;">
+                    <img class="card-img-top" src="./img/Godiva.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Godiva</h4>
+                        <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price: ₹50</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" data-name="Godiva" data-price="50"
+                            class="add-to-cart btn btn-primary text-white">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: ₹<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="credit">Chocolate Shop © 2022 All Right Reserved
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-facebook fa-beat fa-xl" style="color: #045df6;"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-youtube fa-beat fa-xl" style="color: #fb0404;"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-twitter fa-beat fa-xl" style="color: #013cf9;"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa-brands fa-linkedin fa-beat fa-xl" style="color: #035efc;"></i></a>
+
+    </footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
